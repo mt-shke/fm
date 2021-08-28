@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --gray: hsl(0, 0%, 95%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", Verdana;
+  background-color: var(--gray);
+  color: var(--transparent-white);
+  text-align: left;
+  line-height: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--gray);
+}
+
+.main {
+  min-width: 12rem;
+  height: 90rem;
+  margin: 4rem 1rem;
+}
+.main div {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* div */
+.sedans {
+  background-color: var(--orange);
+  border-radius: 6px 6px 0 0;
+}
+.sedans:before {
+  content: url(images/icon-sedans.svg);
+}
+.sedans .learn {
+  color: var(--orange);
+}
+.suvs {
+  background-color: var(--cyan);
+}
+.suvs:before {
+  content: url(images/icon-suvs.svg);
+}
+.suvs .learn {
+  color: var(--cyan);
+}
+
+.luxury {
+  background-color: var(--dark-cyan);
+  border-radius: 0 0 6px 6px;
+}
+.luxury:before {
+  content: url(images/icon-luxury.svg);
+}
+.luxury .learn {
+  color: var(--dark-cyan);
+}
+
+/* learn */
+.learn {
+  padding: 0.6rem 0.4rem;
+  background-color: var(--gray);
+  margin: 1rem 0;
+  width: 8rem;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+.learn:hover {
+  cursor: pointer;
+  background-color: var(--transparent-white);
+}
+
+/* attribution */
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-cyan);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    height: 26rem;
+    width: 42rem;
+    line-height: 1.4rem;
+    margin: 10vh auto;
+  }
+  .main div {
+    display: grid;
+    grid-template-rows: 15% 20% 50% 20%;
+    padding: 2.2rem;
+    font-size: 0.7rem;
+  }
+
+  .sedans {
+    border-radius: 6px 0 0 6px;
+  }
+  .luxury {
+    border-radius: 0 6px 6px 0;
+  }
+
+  .learn {
+    padding: 0.44rem 0.3rem;
+    margin: 1rem 0;
+    width: 8rem;
+    height: 1.6rem;
+    text-align: center;
+
+    border-radius: 50px;
+    text-transform: capitalize;
+  }
+
+  .attribution {
+    display: block;
+  }
+}

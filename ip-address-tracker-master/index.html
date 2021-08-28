@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+		<script
+			defer
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+		></script>
+		<script defer src="script.js"></script>
+
+		<title>Frontend Mentor | IP Address Tracker</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	</head>
+	<body>
+		<header>
+			<h2>IP Address Tracker</h2>
+			<div class="input-container">
+				<input type="text" class="input-ip" placeholder="Search for any IP address or domain " />
+				<button class="button"></button>
+			</div>
+			<ul class="stats">
+				<li>
+					<h5>IP Address</h5>
+					<h4>192.192.192.192</h4>
+				</li>
+
+				<li>
+					<h5>Location</h5>
+					<h4>Santa Fe 23400</h4>
+				</li>
+
+				<li>
+					<h5>Timezone</h5>
+					<h4>Santa Fe 23400</h4>
+				</li>
+
+				<li>
+					<h5>ISP</h5>
+					<h4>Space X Starlink</h4>
+				</li>
+			</ul>
+		</header>
+		<main>
+			<div id="map"></div>
+		</main>
+
+		<!-- add offset value dynamically using the API -->
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="micheltt.netlify.app">MichelTT</a>
+		</div>
+	</body>
+</html>

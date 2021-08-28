@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <!-- Container image -->
+      <div class="container-illustration">
+        <img src="images\illustration-woman-online-mobile.svg" alt="illustration" class="image-mobile" />
+        <img src="images\illustration-woman-online-desktop.svg" alt="illustration" class="image-desktop" />
+        <img src="images\illustration-box-desktop.svg" alt="box" class="image-box" />
+      </div>
+
+      <!-- Container FAQ -->
+      <div class="container-faq">
+        <h1>FAQ</h1>
+        <!-- Model -->
+        <div class="model-question">
+          <!-- input checkbox with id-->
+          <input type="checkbox" id="one" />
+          <!-- label bound with "for" attritube  -->
+          <label for="one" class="question"><p>How many team members can I invite?</p></label>
+          <!-- answer class, hidden/shown text via checkbox -->
+          <p class="answer">
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for
+            the Premium plan.
+          </p>
+        </div>
+
+        <div class="model-question">
+          <input type="checkbox" id="two" checked />
+          <label for="two" class="question"><p>What is the maximum file upload size?</p></label>
+          <p class="answer">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+        <div class="model-question">
+          <input type="checkbox" id="three" />
+          <label for="three" class="question"><p>How do I reset my password?</p></label>
+          <p class="answer">
+            Click “Forgot password” from the login page or “Change password” from your profile page. A reset
+            link will be emailed to you.
+          </p>
+        </div>
+        <div class="model-question">
+          <input type="checkbox" id="four" />
+          <label for="four" class="question"><p>Can I cancel my subscription?</p></label>
+          <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+        <div class="model-question">
+          <input type="checkbox" id="five" />
+          <label for="five" class="question"><p>Do you provide additional support?</p></label>
+          <p class="answer">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">mtsk</a>.
+    </div>
+  </body>
+</html>
