@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+	--cyan: hsl(179, 62%, 43%);
+	--bright-yellow: hsl(71, 73%, 54%);
+	--light-grey: hsl(204, 43%, 93%);
+	--very-light-grey: hsla(203, 44%, 93%, 0.637);
+	--grayish-blue: hsl(218, 22%, 67%);
+	--light-cyan: rgb(74, 190, 189);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+	font-size: 1rem;
+	background-color: var(--light-grey);
+}
+
+article {
+	margin: 4rem auto;
+	width: clamp(20rem, 76%, 50rem);
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+header,
+div {
+	padding: 1.4rem;
+	width: 100%;
+}
+
+header {
+	background-color: white;
+}
+
+header h2 {
+	color: var(--cyan);
+}
+header :nth-child(2) {
+	color: hsl(76, 100%, 40%);
+	margin: 1rem 0;
+}
+
+header p {
+	color: var(--grayish-blue);
+	line-height: 1.4rem;
+}
+
+footer {
+	color: white;
+	border: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.subscription-container {
+	background-color: var(--cyan);
+}
+
+span {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2rem;
+	color: white;
+	margin-right: 0.4rem;
+	margin-bottom: 2rem;
+	vertical-align: middle;
+}
+
+.subscription-container :nth-child(2) {
+	font-size: 1rem;
+	color: var(--very-light-grey);
+	padding: 0.8rem 0;
+}
+
+button {
+	color: var(--light-grey);
+	background-color: var(--bright-yellow);
+	width: 100%;
+	height: 2.6rem;
+	border: 0;
+	border-radius: 4px;
+	margin-top: 1.8rem;
+	font-size: 1.1rem;
+	box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.205), -5px 5px 5px rgba(128, 128, 128, 0.658);
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: hsl(71, 60%, 57%);
+	color: rgb(177, 177, 177);
+}
+
+.why-container {
+	background-color: var(--light-cyan);
+}
+
+ul {
+	margin-top: 1rem;
+	list-style-type: none;
+	font-size: 0.9rem;
+	color: var(--light-grey);
+}
+
+@media (min-width: 520px) {
+	footer {
+		display: flex;
+		flex-direction: row;
+	}
+	header,
+	div {
+		padding: 2rem;
+	}
+}
