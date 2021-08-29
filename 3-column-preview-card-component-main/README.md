@@ -1,3 +1,5 @@
+screenshot.jpg
+
 Border-radius on child
 
 .sedans:before { content: url(images/icon-sedans.svg); }
