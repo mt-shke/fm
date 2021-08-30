@@ -54,7 +54,8 @@ body {
 }
 
 .hero__container {
-	display: block;
+	display: flex;
+	flex-direction: row;
 	position: static;
 	z-index: 2;
 	width: 100%;
