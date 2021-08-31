@@ -212,12 +212,16 @@ footer {
 
 	.article__container {
 		padding: 3rem;
-		width: 45%;
 	}
+
+	/* .article__container p {
+		overflow: break-word;
+	} */
 
 	.article__container h1 {
 		font-size: 3rem;
 		padding: 2rem;
+		width: clamp(30rem, 45%, 36rem);
 	}
 
 	.btn__container {
@@ -284,7 +288,7 @@ footer {
 	}
 
 	.footer__content {
-		width: 80%;
+		width: clamp(30rem, 80%, 75rem);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
