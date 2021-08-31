@@ -212,6 +212,7 @@ footer {
 
 	.article__container {
 		padding: 3rem;
+		width: clamp(30rem, 45%, 36rem);
 	}
 
 	/* .article__container p {
@@ -221,7 +222,6 @@ footer {
 	.article__container h1 {
 		font-size: 3rem;
 		padding: 2rem;
-		width: clamp(30rem, 45%, 36rem);
 	}
 
 	.btn__container {
