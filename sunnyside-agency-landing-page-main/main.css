@@ -57,7 +57,7 @@ header {
 }
 
 .container__header {
-	grid-template-rows: 6rem 15rem 15rem;
+	grid-template-rows: 6rem 15rem 18rem;
 	align-items: center;
 	background-color: var(--header-blue);
 }
@@ -476,5 +476,22 @@ header h1 {
 
 	.about {
 		gap: 3rem;
+	}
+}
+
+@media (min-width: 520px) {
+	.container__header {
+		grid-template-rows: 6rem 15rem 16rem;
+	}
+}
+@media (min-width: 800px) {
+	.container__header {
+		grid-template-rows: 6rem 15rem 22rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container__header {
+		grid-template-rows: 6rem 15rem 26rem;
 	}
 }
