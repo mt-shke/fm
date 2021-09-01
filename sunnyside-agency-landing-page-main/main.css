@@ -37,6 +37,7 @@ h3,
 a:hover,
 li:hover {
 	color: var(--white);
+	cursor: pointer;
 }
 
 body {
@@ -154,7 +155,7 @@ header h1 {
 .intro__element a:after {
 	position: absolute;
 	content: "";
-	background-image: linear-gradient(rgb(255, 255, 196), rgb(255, 255, 78));
+	background-color: var(--yellow);
 	background-size: cover;
 	height: 0.4rem;
 	width: 100%;
@@ -162,6 +163,10 @@ header h1 {
 	top: 90%;
 	z-index: -1;
 	padding: 0;
+}
+
+.intro__element a:hover:after {
+	background-color: var(--soft-red);
 }
 
 .intro__element__text {
