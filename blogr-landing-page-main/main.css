@@ -4,12 +4,15 @@
 	--light-red: hsl(356, 100%, 66%);
 	--vlight-red: hsl(355, 100%, 74%);
 	--vdark-blue: hsl(208, 49%, 24%);
+
 	--white: hsl(0, 0%, 100%);
 	--grayish-blue: hsl(240, 2%, 79%);
 	--vldark-blue: hsl(207, 13%, 34%);
 	--vdark--black-blue: hsl(240, 10%, 16%);
+	/* Background gradient - Intro/CTA mobile nav: */
 	--bg-vlight-red: hsl(13, 100%, 72%);
 	--bg-light-red: hsl(353, 100%, 62%);
+	/* Background gradient - body: */
 	--bg-vdark-blue: hsl(237, 17%, 21%);
 	--bg-desatured-blue: hsl(237, 23%, 32%);
 	--bg-nav__item: hsl(240, 7%, 94%);
@@ -51,6 +54,7 @@ p {
 	line-height: 4.6rem;
 }
 
+/* Overpass 300;600    --- Ubuntu: 400;500;700 */
 header {
 	color: var(--white);
 	border-radius: 0 0 0 15rem;
