@@ -25,7 +25,7 @@
 
 body {
 	font-family: "Overpass", sans-serif;
-	font-size: 1rem;
+	font-size: 2.5rem;
 	background-color: var(--white);
 	text-align: center;
 }
@@ -41,7 +41,7 @@ h2,
 h3,
 h4 {
 	color: var(--bg-vdark-blue);
-	font-size: 1.4rem;
+	font-size: 5rem;
 }
 
 ul {
@@ -49,13 +49,13 @@ ul {
 }
 p {
 	opacity: 0.7;
-	font-size: 0.9rem;
+	line-height: 4.6rem;
 }
 
 /* Overpass 300;600    --- Ubuntu: 400;500;700 */
 header {
 	color: var(--white);
-	border-radius: 0 0 0 5rem;
+	border-radius: 0 0 0 15rem;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -74,33 +74,32 @@ header {
 	width: 100%;
 	height: 100%;
 	background-image: url(./images/bg-pattern-intro.svg);
-	background-size: 71rem;
-	background-position: left -18rem top -10rem;
+	background-size: 204rem;
+	background-position: left -47rem top -45rem;
 	z-index: 3;
 }
 .header__nav {
 	display: flex;
 	position: relative;
 	justify-content: space-between;
-	padding: 2rem 1rem;
+	padding: 8rem 4rem;
 	align-items: center;
 	z-index: 10;
 }
 
 .header__logo {
-	width: 4rem;
-	height: 1.6rem;
-	margin-bottom: 0.45rem;
+	width: 7em;
+	height: 7rem;
 }
 
 .icon__hamburger {
-	width: 1.2rem;
-	height: 1rem;
+	width: 5rem;
+	height: 4rem;
 }
 .icon__close {
 	display: none;
-	width: 1.2rem;
-	height: 1rem;
+	width: 5rem;
+	height: 4rem;
 }
 
 .navbar {
@@ -140,39 +139,42 @@ header {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 	width: 90%;
 	margin: 0 auto;
-	padding: 4rem 0;
+	padding: 12rem 0;
 	z-index: 7;
 }
 
 .header__content h1 {
-	font-size: 1.8rem;
-	font-weight: 600;
+	font-size: 6rem;
+	line-height: 9rem;
+	font-weight: 700;
 }
 
 .header__content p {
+	padding: 0 2rem;
 	opacity: 0.9;
 }
 
 .header__content__link {
 	display: flex;
 	justify-content: center;
-	gap: 0.5rem;
-	margin: 2rem auto;
+	gap: 3rem;
+	margin: 6rem auto;
 }
 
 .header__content a {
-	padding: 0.6rem 0.8rem;
+	padding: 2rem 3rem;
 	background-color: transparent;
 	color: var(--white);
 	border: 1px solid var(--white);
-	border-radius: 3rem;
+	border-radius: 4rem;
 	outline: none;
 	font-weight: 500;
 	vertical-align: middle;
 	font-family: "Ubuntu";
+	font-size: 2.8rem;
 }
 
 .header__content a:first-child {
@@ -184,7 +186,7 @@ header {
 
 .section__graph h2 {
 	color: var(--vdark-blue);
-	padding: 5rem 0 2rem;
+	padding: 20rem 0 12rem;
 }
 
 .graph {
@@ -193,20 +195,21 @@ header {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 18rem;
+	height: 54rem;
 	margin: 0 auto;
 }
 
 .container__graph__article {
-	padding: 1rem;
+	padding: 4rem 1rem;
 }
 
 .container__graph__article h3 {
-	padding: 1rem 2rem;
+	padding: 4rem 2rem 2rem;
 }
 
 .container__graph__article p {
-	line-height: 1.5rem;
+	padding: 2rem;
+	line-height: 4.6rem;
 	margin: 1rem auto 2.4rem;
 	color: var(--vldark-blue);
 }
@@ -214,37 +217,38 @@ header {
 /* Section phone */
 .section__phone {
 	position: relative;
-	padding: 6rem 0 4rem;
+	margin: 10rem auto;
+	padding: 26rem 0 4rem;
 }
 
 .phone {
 	background-image: url(./images/illustration-phones.svg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 18rem;
+	background-size: 60rem;
 	position: absolute;
 	left: 50%;
-	top: 0;
+	top: 0rem;
 	transform: translate(-50%);
 	z-index: 3;
-	height: 18rem;
-	width: 18rem;
+	height: 60rem;
+	width: 100%;
 }
 
 .container__phone {
 	background-color: var(--bg-vdark-blue);
-	border-radius: 0 5rem 0 5rem;
+	border-radius: 0 15rem 0 15rem;
 	position: relative;
 	overflow: hidden;
 }
 
 .container__phone__background {
 	background-image: url("./images/bg-pattern-circles.svg");
-	background-size: 30rem;
-	background-position: center -10rem;
+	background-size: 100rem;
+	background-position: center -40rem;
 	background-repeat: no-repeat;
 	position: absolute;
-	height: 20rem;
+	height: 80rem;
 	width: 100%;
 	z-index: 1;
 }
@@ -256,15 +260,18 @@ header {
 	color: var(--white);
 	position: relative;
 	z-index: 4;
-	padding: 13rem 1rem 6rem;
+	padding: 36rem 1rem 16rem;
 }
 
 .container__phone__content h2 {
+	font-size: 6rem;
 	color: var(--white);
 }
 .container__phone__content p {
 	font-family: "Overpass", serif;
-	line-height: 1.4rem;
+	font-size: 1.8rem;
+	letter-spacing: 3px;
+	padding: 2rem;
 }
 
 /* Section laptop */
@@ -278,9 +285,9 @@ header {
 .laptop {
 	background-image: url("./images/illustration-laptop-mobile.svg");
 	background-repeat: no-repeat;
-	background-size: 24rem;
+	background-size: 80rem;
 	background-position: center;
-	height: 20rem;
+	height: 80rem;
 	width: 100%;
 }
 
@@ -292,39 +299,39 @@ header {
 }
 
 .container__laptop__content h3 {
-	margin: 1rem auto;
+	margin: 6rem auto;
 }
 
 /* Footer  */
 
 footer {
-	border-radius: 0 5rem 0 0;
+	border-radius: 0 15rem 0 0;
 	background-color: var(--bg-vdark-blue);
 	color: var(--white);
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
 	font-family: "Ubuntu", serif;
-	padding: 3rem;
+	padding: 10rem auto 8rem;
 }
 
 .footer__logo {
-	margin: 1rem auto;
-	width: 6rem;
+	margin: 10rem auto;
+	width: 18rem;
 }
 
 .footer__content h4 {
 	color: var(--white);
-	font-size: 1rem;
-	margin-bottom: 1.4rem;
-	font-weight: 600;
+	margin-bottom: 4rem;
+	font-size: 3.6rem;
+	font-weight: 400;
 }
 
 .footer__content ul {
 	display: flex;
 	flex-direction: column;
 	font-family: "Overpass", serif;
-	gap: 0.3rem;
+	gap: 1.8rem;
 	opacity: 0.7;
-	font-size: 0.9rem;
+	margin-bottom: 6rem;
 }
