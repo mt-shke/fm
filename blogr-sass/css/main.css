@@ -158,6 +158,15 @@ hr {
 }
 
 /* Checkbox  Hamburger Mobile Menu */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #checkbox__hamburger {
   display: none;
   position: absolute;
@@ -170,6 +179,7 @@ hr {
 
 .header__nav #checkbox__hamburger:checked + .icon__hamburger + .icon__close {
   display: block;
+  transition: opacity 1s ease-in;
 }
 
 .header__nav #checkbox__hamburger:checked + .icon__hamburger + .icon__close + .navbar {
@@ -188,9 +198,10 @@ hr {
 
 .navbar span {
   display: block;
+  font-size: 3rem;
+  font-weight: 500;
   margin: 1rem;
   font-family: "Ubuntu", serif;
-  font-weight: 600;
 }
 
 .nav__item li {
@@ -278,6 +289,14 @@ hr {
     height: 100%;
     top: 0;
   }
+  .navbar span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  span:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
   .nav__item {
     display: none;
     position: absolute;
@@ -304,7 +323,6 @@ hr {
     text-decoration: none;
   }
   .navbar__login a:hover {
-    color: #525464;
     font-weight: bold;
   }
   .navbar__login a:last-child {
@@ -719,12 +737,12 @@ footer {
   flex-direction: column;
   font-family: "Overpass", serif;
   gap: 1.8rem;
-  opacity: 0.7;
   margin-bottom: 6rem;
 }
 
 .footer__content a {
   color: var(--white);
+  opacity: 0.7;
 }
 
 @media (min-width: 1000px) {
@@ -754,6 +772,10 @@ footer {
   .footer__content ul {
     gap: 0.6rem;
     margin-bottom: unset;
+  }
+  a:hover {
+    opacity: 1;
+    color: white;
   }
 }
 /*# sourceMappingURL=main.css.map */

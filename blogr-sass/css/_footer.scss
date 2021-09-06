@@ -27,12 +27,12 @@ footer {
 	flex-direction: column;
 	font-family: "Overpass", serif;
 	gap: 1.8rem;
-	opacity: 0.7;
 	margin-bottom: 6rem;
 }
 
 .footer__content a {
 	color: var(--white);
+	opacity: 0.7;
 }
 
 @media (min-width: 1000px) {
@@ -66,5 +66,9 @@ footer {
 	.footer__content ul {
 		gap: 0.6rem;
 		margin-bottom: unset;
+	}
+	a:hover {
+		opacity: 1;
+		color: white;
 	}
 }
