@@ -27,18 +27,30 @@
 
 @media (min-width: 1000px) {
 	.section__laptop {
+		padding: 6rem 0 10rem;
 		max-width: 1440px;
 		margin-bottom: unset;
 		flex-direction: row;
 		align-items: center;
+		position: relative;
+		overflow: visible;
 	}
 
+	.container__laptop__img {
+		position: relative;
+		width: 50%;
+		height: 100%;
+	}
 	.laptop {
 		background-image: url("../images/illustration-laptop-desktop.svg");
-		background-position: right center;
+		background-position: center center;
 		background-size: 50rem;
 		height: 50rem;
-		width: 50%;
+		width: 50rem;
+		top: -22rem;
+		right: 10rem;
+		position: absolute;
+		overflow: visible;
 	}
 
 	.container__laptop__content {

@@ -474,7 +474,7 @@ hr {
     position: absolute;
   }
   .container__graph__article {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem 2rem 6rem;
     text-align: left;
     margin: 0 50% 0 0;
   }
@@ -514,6 +514,7 @@ hr {
   position: relative;
   margin: 10rem auto;
   padding: 26rem 0 4rem;
+  max-width: 1440px;
 }
 
 .phone {
@@ -552,6 +553,7 @@ hr {
 .container__phone__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   color: var(--white);
   position: relative;
@@ -578,16 +580,19 @@ hr {
   }
   .phone {
     background-size: 29rem;
-    left: 20rem;
-    top: 4rem;
-    transform: translate(-50%);
+    left: 19rem;
+    top: 3rem;
     height: 29rem;
+    width: 29rem;
+    margin: 0 auto;
+    position: absolute;
   }
   .container__phone {
     border-top-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
     max-width: 1440px;
     margin: 0 auto;
+    max-height: 28rem;
   }
   .container__phone__background {
     background-size: 49rem;
@@ -595,9 +600,10 @@ hr {
     height: 60rem;
   }
   .container__phone__content {
-    padding: 6rem 8rem;
-    margin: 0 0 0 45%;
+    padding: 0 2rem 0 6rem;
+    margin: 0 0 0 44%;
     text-align: left;
+    height: 24rem;
   }
   .container__phone__content h2 {
     font-size: 2rem;
@@ -609,13 +615,12 @@ hr {
   }
 }
 
-@media (min-width: 1439px) {
-  .phone {
-    background-size: 29rem;
-    left: 95rem;
-    top: 4rem;
-    transform: translate(-50%);
-    height: 29rem;
+@media (min-width: 1440px) {
+  .container__phone__content {
+    padding: 2rem 6rem;
+    margin: 0 0 0 44%;
+    text-align: left;
+    height: 24rem;
   }
 }
 
@@ -648,17 +653,29 @@ hr {
 
 @media (min-width: 1000px) {
   .section__laptop {
+    padding: 6rem 0 10rem;
     max-width: 1440px;
     margin-bottom: unset;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+  .container__laptop__img {
+    position: relative;
+    width: 50%;
+    height: 100%;
   }
   .laptop {
     background-image: url("../images/illustration-laptop-desktop.svg");
-    background-position: right center;
+    background-position: center center;
     background-size: 50rem;
     height: 50rem;
-    width: 50%;
+    width: 50rem;
+    top: -22rem;
+    right: 10rem;
+    position: absolute;
+    overflow: visible;
   }
   .container__laptop__content {
     width: 50%;
