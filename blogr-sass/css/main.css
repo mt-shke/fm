@@ -83,7 +83,6 @@ section {
     font-weight: 400;
   }
 }
-
 header {
   color: var(--white);
   border-bottom-left-radius: 15rem;
@@ -166,7 +165,6 @@ hr {
     opacity: 1;
   }
 }
-
 #checkbox__hamburger {
   display: none;
   position: absolute;
@@ -237,6 +235,7 @@ hr {
   background-image: linear-gradient(to right, var(--bg-vlight-red) 30%, var(--bg-light-red));
   background-color: unset;
   height: 100%;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   border-radius: 4rem;
@@ -293,8 +292,9 @@ hr {
     font-size: 1rem;
     font-weight: bold;
   }
-  span:hover {
+  .navbar span:hover {
     font-weight: bold;
+    opacity: 80%;
     cursor: pointer;
   }
   .nav__item {
@@ -318,16 +318,19 @@ hr {
   .navbar__login a {
     color: var(--white);
     display: inline-block;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 0 1rem;
     text-decoration: none;
   }
   .navbar__login a:hover {
-    font-weight: bold;
+    font-weight: normal;
+    opacity: 80%;
   }
   .navbar__login a:last-child {
     padding: auto 2rem;
     height: 100%;
+    width: -moz-fit-content;
     width: fit-content;
     background-image: unset;
     background-color: var(--white);
@@ -338,7 +341,6 @@ hr {
     color: white;
   }
 }
-
 .header__content {
   position: relative;
   display: flex;
@@ -430,7 +432,6 @@ hr {
     color: white;
   }
 }
-
 .section__graph {
   display: block;
 }
@@ -507,7 +508,6 @@ hr {
     margin: unset;
   }
 }
-
 @media (min-width: 1439px) {
   .graph {
     background-image: url("../images/illustration-editor-desktop.svg");
@@ -526,7 +526,6 @@ hr {
     margin: 0 50% 0 0;
   }
 }
-
 .section__phone {
   position: relative;
   margin: 10rem auto;
@@ -631,7 +630,6 @@ hr {
     padding: unset;
   }
 }
-
 @media (min-width: 1440px) {
   .container__phone__content {
     padding: 2rem 6rem;
@@ -640,7 +638,6 @@ hr {
     height: 24rem;
   }
 }
-
 .section__laptop {
   margin-bottom: 10rem;
   display: flex;
@@ -706,7 +703,6 @@ hr {
     line-height: 1.8rem;
   }
 }
-
 footer {
   border-top-right-radius: 15rem;
   background-color: var(--bg-vdark-blue);
@@ -776,5 +772,4 @@ footer {
     opacity: 1;
     color: white;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

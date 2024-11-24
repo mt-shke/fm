@@ -4,12 +4,12 @@
   font-size: 13px;
   margin: 0;
   padding: 0;
-  color: #48556a;
+  color: hsl(217, 19%, 35%);
   font-weight: 500;
 }
 
 body {
-  background-color: #ecf2f8;
+  background-color: hsl(210, 46%, 95%);
   min-height: 100vh;
   min-width: 100%;
   display: flex;
@@ -17,7 +17,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 body .main {
   min-height: 80vh;
   min-width: 80vw;
@@ -25,17 +24,14 @@ body .main {
   display: flex;
   flex-direction: column;
 }
-
 body .main p {
-  color: #6d7f97;
+  color: hsl(214, 17%, 51%);
 }
-
 body .main .picture {
   height: auto;
   width: 100%;
   border-radius: 8px 8px 0 0;
 }
-
 body .main .card {
   background-color: white;
   padding: 3rem 2rem 2rem;
@@ -46,37 +42,31 @@ body .main .card {
   flex-grow: 1;
   border-radius: 0 0 8px 8px;
 }
-
 body .main .card h1 {
   font-weight: 700;
   font-size: 1.3rem;
 }
-
 body .main .card .identity {
   display: flex;
   justify-content: flex-start;
 }
-
 body .main .card .identity .photo {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   margin-right: 1rem;
 }
-
 body .main .card .identity div h2 {
   font-weight: 700;
   font-size: 1.1rem;
 }
-
 body .main .card .identity div p {
-  color: #9eafc2;
+  color: hsl(212, 23%, 69%);
 }
-
 body .main .card .identity .icon {
   padding: 0.5rem 0.75rem;
   border-radius: 50%;
-  background-color: #ecf2f8;
+  background-color: hsl(210, 46%, 95%);
   border: none;
   margin-left: auto;
 }
@@ -88,7 +78,7 @@ body .main .card .identity .icon {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 480px) {
@@ -97,7 +87,6 @@ body .main .card .identity .icon {
     margin: 4rem auto;
   }
 }
-
 @media screen and (min-width: 800px) {
   body .main {
     min-height: 320px;
@@ -120,5 +109,4 @@ body .main .card .identity .icon {
   body .main .card p {
     line-height: 1.8rem;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

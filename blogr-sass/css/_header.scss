@@ -204,8 +204,9 @@ hr {
 		font-weight: bold;
 	}
 
-	span:hover {
+	.navbar span:hover {
 		font-weight: bold;
+		opacity: 80%;
 		cursor: pointer;
 	}
 	.nav__item {
@@ -237,7 +238,8 @@ hr {
 	}
 
 	.navbar__login a:hover {
-		font-weight: bold;
+		font-weight: normal;
+		opacity: 80%;
 	}
 
 	.navbar__login a:last-child {
